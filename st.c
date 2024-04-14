@@ -1435,12 +1435,15 @@ tsetchar(Rune u, const Glyph *attr, int x, int y)
 	} else if (term.line[y][x].mode & ATTR_WDUMMY) {
 		term.line[y][x-1].u = ' ';
 		term.line[y][x-1].mode &= ~ATTR_WIDE;
-  }
+    }
 
 	term.dirty[y] = 1;
 	term.line[y][x] = *attr;
 	term.line[y][x].u = u;
 	term.line[y][x].mode |= ATTR_SET;
+
+	if (isboxdraw(u))
+		term.line[y][x].mode |= ATTR_BOXDRAW;
 }
 
 void
