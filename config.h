@@ -8,7 +8,7 @@
 static char *fonts[] = {
 	"Hack Nerd Font Mono:pixelsize=12:antialias=true:autohint=true",
 	"Liberation Mono:pixelsize=12:antialias=true:autohint=true",
-    "terminus:pixelsize=14",
+    "termsyn:pixelsize=14",
     "ohsnap:pixelsize=14",
 };
 static size_t currentfont = 0;
