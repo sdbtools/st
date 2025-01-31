@@ -6,10 +6,9 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *fonts[] = {
-	"Hack Nerd Font Mono:pixelsize=12:antialias=true:autohint=true",
-	"Liberation Mono:pixelsize=12:antialias=true:autohint=true",
-    "termsyn:pixelsize=14",
-    "ohsnap:pixelsize=14",
+    "Hack Nerd Font Mono:pixelsize=14:antialias=true:autohint=true",
+    "Liberation Mono:pixelsize=14:antialias=true:autohint=true",
+    "terminus:pixelsize=16",
 };
 static size_t currentfont = 0;
 static int borderpx = 2;
